@@ -11,7 +11,7 @@ async fn main() {
         .map(|body| warp::reply::html(body));
     let routes = warp::get().and(hello_world.or(warp::fs::dir("app")));
 
-    warp::serve(routes).run(([127, 0, 0, 1], 8080)).await;
+    warp::serve(routes).run(([0, 0, 0, 0], 8080)).await;
 }
 
 fn hello_markup() -> String {
