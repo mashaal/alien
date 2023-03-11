@@ -1,0 +1,21 @@
+div {
+  margin: 1rem 0 0;
+  text-align: center;
+  font-size: 5rem;
+  color: skyblue;
+}
+
+button {
+  padding: 1rem;
+  margin: 0 auto 3rem;
+  display: block;
+  font-family: monospace;
+  background: skyblue;
+  border: none;
+  color: white;
+  transition: background 0.2s;
+}
+
+button:disabled {
+  background: #eee;
+}
