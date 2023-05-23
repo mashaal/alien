@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "mono";
+  src: url("./fonts/mono.woff2");
+  font-weight: 100 500;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "mono";
+  src: url("./fonts/italic.woff2");
+  font-weight: 100 500;
+  font-display: block;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "mono";
+  src: url("./fonts/bold.woff2");
+  font-weight: 600 900;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "mono";
+  src: url("./fonts/bold-italic.woff2");
+  font-weight: 600 900;
+  font-display: block;
+  font-style: italic;
+}
+
+:root {
+  --bg: rgb(32, 34, 37);
+  --colour: rgb(160, 160, 160);
+  --strong: white;
+  --highlight: aqua;
+  --deselected: rgb(45, 48, 52);
+  --padding: clamp(1rem, 2vw, 2rem);
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 5s;
+}
+
+::selection {
+  background: var(--highlight);
+  color: black;
+}
+
+[hidden] {
+  display: none;
+}
+
+strong {
+  color: var(--strong);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--colour);
+  text-align: left;
+  font-size: 100%;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+  min-width: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  font-family: mono;
+  font-smooth: always;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: var(--highlight);
+}
+
+img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 0 0 1rem #00000080;
+}
+
+p {
+  padding: 0 1rem;
+  max-width: 666px;
+  margin: auto;
+  text-align: center;
+}
+
+.x {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+}

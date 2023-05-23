@@ -1,8 +1,8 @@
-# Webcrust
+# Alien
 
 Build (Stable)
 
-- rustup target add --toolchain nightly x86_64-unknown-linux-musl
+- rustup target add --toolchain stable x86_64-unknown-linux-musl
 - cargo build --release --target=x86_64-unknown-linux-musl
 
 Build (Nightly)
